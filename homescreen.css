@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: 'Roboto Slab', serif;
+    list-style: none;
+
+}
+
+.main-container{
+
+    display: flex;
+
+
+}
+
+/* here is my logo styling */
+
+.logo img{
+
+    width: 100px;
+    margin-top: 20px;
+    margin-left: 10px;
+    
+}
+
+/* my manu-bar starts here */
+
+.menu-bar{
+
+    /* position: sticky; */
+    right: 0px;
+    top: 0px;                           
+    bottom: 0px;
+    background-color: #262629;
+    width: 15%;
+    height: 90vh;
+    padding: 0px 20px;
+    
+}
+
+ul li{
+    padding: 12px 24px 12px 24px;
+    margin-left: 25px;
+}
+
+ul li a{
+    color: white;
+    display: flex;
+    gap: 12px;
+    font-size: 12px;
+}
+
+ul i{
+    font-size: 18px;
+}
+
+.menu-bar h3{
+
+    color: #0c9159;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+}
+
+.home{
+    color: #14f195;
+}
+
+
+/* content-container design starts here */
+
+
+.content-container{
+
+    background-color: #171719;
+    width: 85%;
+    height: 90vh;
+}
+
+
+
+/* header-main design starts here */
+
+.image{
+
+    width: 15px;
+    border-radius: 50%;
+}
+
+.header-title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-main{
+    align-items: center;
+    padding: 20px;
+    
+    
+}
+
+.profile-info{
+    align-items: center;
+    gap: 5px;
+
+}
+
+.profile-info span{
+    color: white;
+    margin-left: 15px;
+
+}
+
+.vl{
+    border-left: 2px solid white;
+   
+}
+
+.arrow{
+
+    transform: rotate(180deg);
+}
+
+.search-box input{
+    padding: 8px;
+    background-color: transparent;
+    outline: none;
+    width: 300px;
+    margin-left: 40px;
+    border: none;
+    
+
+}
+
+.search-box{
+
+    background-color: #171719;
+    border: 1px solid white;
+    margin-left: 15px;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.search-box input::placeholder{
+    color: white;
+    margin-left: 60px;
+    padding: 100px;
+   
+}
+
+.search-box input:focus {
+
+    outline: none;
+    color: white;
+    text-transform: capitalize;
+}
+
+
+.search-box{
+    position: relative;
+}
+
+.search-box button{
+    padding: 8px;
+    position: absolute;
+    left: 10px;
+    border: none;
+    font-size: 15px;
+    background-color: transparent;
+    color: white;
+}
+
+/* content-main design starts here */
+
+.content-main img{
+    width: 100%;
+    margin: 15px 0px;
+    height: 40vh;
+}
+
+/* content-sub design starts here */
+
+.content-sub span{
+    margin: 10px;
+}
+
+.rec{
+    width: 150px;
+}
+
+.rem{
+    width: 150px;
+    height: 150px;
+}
+
+.music-flex{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.content-sub h3{
+
+    color: white;
+    margin: 10px;
+    font-size: 15px;
+    font: 1em sans-serif;
+}
+
+
+.audio-c img{
+    height: 10vh;
+    width: 100%;
+}
+
+/* bar design starts here */
+
+#tool{
+
+    display: none;
+}
+
+.bar-menu i{
+
+    display: none;
+    
+}
+
+
+/* Mobile responsive from screen to max-width of 1040px starts here */
+
+
+@media screen and (min-width:1024px) and (max-width:1040px) {
+
+    
+    
+
+}
+
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .menu-bar{
+
+        background-color: #3333d1;
+        width: 30%;
+        
+    }
+    .main-container{
+
+        display: flex;
+        width: 100%;
+    }
+
+}
+
+
+@media screen and (min-width:360px) and (max-width:767px) {
+
+
+    #tool:checked ~ ul{
+
+        display: none;
+    
+    }
+
+    .bar-menu i{
+
+        display: block;
+        color: white;
+        
+    }
+
+    .music-flex{
+        display: block;
+        width: 100%;
+        margin-left: 65px;
+        
+    }
+
+    .main-container{
+
+        display: block;
+        width: 100%;
+    
+    
+    }
+
+    .rec{
+        width: 300px;
+        margin-top: 10px;
+    }
+
+    .rem{
+        width: 300px;
+        height: 300px;
+    }
+    
+    .search-box input{
+        width: 160px;
+        margin-left: 30px; 
+    
+    }
+
+    .search-box{ 
+        margin-left: 5px;
+      
+    }
+
+    .profile-info span{
+        margin-left: 10px;
+    
+    }
+
+    .content-container{
+
+       
+        width: 100%;
+        height: 330vh;
+    }
+
+    .menu-bar{
+        width: 100%;
+        height: 90vh;
+        /* padding: 0px 20px; */
+        
+    }
+
+    .search-box{
+        margin-left: 1px;
+      
+       
+    }
+    
+    .search-box input::placeholder{
+        
+        font-size: 10px;
+       
+    }
+
+    .music{
+
+        margin-top: 15px;
+        
+    }
+
+    .content-sub h3{
+
+        font-size: 25px;
+
+    
+    }
+
+    .profile-info span{
+
+        font-size: 15px;
+    }
+
+   
+    
+    
+
+}
+
+
+
+
+
